@@ -1,5 +1,13 @@
-$header-and-footer-height: 100px;
+$corner-radius: 15px;
 
+@mixin icon-content-icon {
+  display: grid;
+  grid-template-columns: 20% auto 20%;
+  align-items: center;
+  justify-items: center;
+}
+
+@import './app.scss';
 @import './header.scss';
 @import './station-list.scss';
 @import './footer.scss';

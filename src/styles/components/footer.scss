@@ -1,5 +1,25 @@
 .footer {
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  align-content: center;
+
   background-color: $bg2;
   color: $text-on-bg;
-  height: $header-and-footer-height;
+
+  font-size: 1.2rem;
+
+  border-bottom-left-radius: $corner-radius;
+  border-bottom-right-radius: $corner-radius;
+
+  .status {
+    color: $primary;
+    line-height: 0.8;
+    font-size: 0.7em
+  }
+
+  .details {
+    font-size: 1em;
+  }
+
 }

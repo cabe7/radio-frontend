@@ -1,0 +1,10 @@
+$h-f-height: 70px;
+
+.page-container {
+  background-color: $page;
+  height: 100vh;
+  padding: 5%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: $h-f-height auto $h-f-height;
+}
