@@ -1,19 +1,27 @@
 $h-f-height: 100px;
-$pad: 2vh;
+$breath-room: 2vh;
 $list-height: 1fr;
 
 #root {
   background-color: $page;
-  margin: $pad;
+  margin: $breath-room;
   .app-container {
     width: 100%;
     margin: 0 auto;
     max-width: 500px;
-    height: 100vh - $pad - $pad;
+    height: 100vh - 2 * $breath-room;
     display: grid;
+    background-color: $page;
     grid-template-columns: 100%;
     grid-template-rows: $h-f-height $list-height $h-f-height;
     align-content: space-between;
     //box-shadow: 0px 10px 5px 3px rgba(0, 0, 0, .2);
   }
+}
+
+.error-message {
+  text-align: center;
+  background-color: $bg1;
+  color: $text-on-bg;
+  padding-top: 1rem;
 }
