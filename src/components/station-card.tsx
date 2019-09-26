@@ -8,7 +8,7 @@ type StationCardProps = {
   updateSelected: React.Dispatch<React.SetStateAction<null | number>>;
 };
 
-const StationCard: React.FC<StationCardProps> = (props) => {
+const StationCard: React.FC<StationCardProps> = props => {
   // hooks and 'set' func must be inside their comps (obviously)
   let expand = () => {
     return props.currentStation === props.station.id;
@@ -24,14 +24,10 @@ const StationCard: React.FC<StationCardProps> = (props) => {
 
   return (
     <div className="station" onClick={toggleSelected}>
-      {expand() ? <StationCardExpansion url={ props.station.image } /> : null}
+      {expand() ? <StationCardExpansion url={props.station.image} /> : null}
       <div className="compact">
-        <div className="station-name">
-          { props.station.name }
-        </div>
-        <div className="station-freq">
-          { props.station.frequency }
-        </div>
+        <div className="station-name">{props.station.name}</div>
+        <div className="station-freq">{props.station.frequency}</div>
       </div>
     </div>
   );

@@ -3,4 +3,4 @@ export type Station = {
   frequency: string;
   image: string;
   name: string;
-}
+};

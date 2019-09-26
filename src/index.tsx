@@ -6,4 +6,3 @@ import './styles/index.scss';
 const Root = document.getElementById('root');
 
 ReactDOM.render(<App />, Root);
-
