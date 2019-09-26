@@ -6,6 +6,7 @@
 
   background-color: $bg2;
   color: $text-on-bg;
+  border-top: 1px solid $subtle-on-bg;
 
   font-size: 1.2rem;
 
@@ -14,12 +15,14 @@
 
   .status {
     color: $primary;
-    line-height: 0.8;
-    font-size: 0.7em
+    line-height: 1.1;
+    font-size: 0.75em;
+    font-weight: bold;
   }
 
   .details {
-    font-size: 1em;
+    font-size: 1.5em;
+    line-height: 1.1;
   }
 
 }

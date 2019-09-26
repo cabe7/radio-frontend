@@ -1,4 +1,4 @@
-$space: 0.5em;
+$space: 1em;
 
 .station {
   margin-left: $space;
@@ -6,13 +6,20 @@ $space: 0.5em;
   border-bottom: 1px solid $subtle-on-bg;
   font-size: 1.5rem;
 
+  &:last-child {
+    border-bottom: none;
+  }
+
   .expansion {
     @include icon-content-icon;
     padding-top: $space;
 
+    font-size: 2.5rem;
+
     img {
+      border: 2px solid $text-on-bg;
       border-radius: 50%;
-      width: 50%;
+      width: 60%;
     }
   }
 

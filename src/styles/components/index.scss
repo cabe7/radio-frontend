@@ -7,10 +7,14 @@ $corner-radius: 15px;
   justify-items: center;
 }
 
+html {
+  background-color: $page;
+}
+
 @import './app.scss';
 @import './header.scss';
 @import './station-list.scss';
 @import './footer.scss';
-@import './station.scss';
+@import './station-card.scss';
 
 

@@ -1,10 +1,19 @@
-$h-f-height: 70px;
+$h-f-height: 100px;
+$pad: 2vh;
+$list-height: 1fr;
 
-.page-container {
+#root {
   background-color: $page;
-  height: 100vh;
-  padding: 5%;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: $h-f-height auto $h-f-height;
+  margin: $pad;
+  .app-container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 500px;
+    height: 100vh - $pad - $pad;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: $h-f-height $list-height $h-f-height;
+    align-content: space-between;
+    //box-shadow: 0px 10px 5px 3px rgba(0, 0, 0, .2);
+  }
 }

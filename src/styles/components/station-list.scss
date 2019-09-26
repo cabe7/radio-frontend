@@ -1,4 +1,6 @@
 .station-list {
+  overflow-y: scroll;
   background-color: $bg1;
   color: $text-on-bg;
+  padding-top: 1rem;
 }
