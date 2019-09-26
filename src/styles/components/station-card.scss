@@ -1,0 +1,39 @@
+$space: 1em;
+
+.station {
+  margin-left: $space;
+  margin-right: $space;
+  border-bottom: 1px solid $subtle-on-bg;
+  font-size: 1.5rem;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .expansion {
+    @include icon-content-icon;
+    padding-top: $space;
+
+    font-size: 2.5rem;
+
+    img {
+      border: 2px solid $text-on-bg;
+      border-radius: 50%;
+      width: 60%;
+    }
+  }
+
+  .compact {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    justify-content: space-between;
+
+    padding-top: $space;
+    padding-bottom: $space;
+
+    .station-freq {
+      font-weight: bold;
+    }
+  }
+}

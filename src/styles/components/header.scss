@@ -1,5 +1,18 @@
 .header {
-  height: 40px;
+  @include icon-content-icon;
   background-color: $primary;
   color: $text-on-primary;
+
+  font-size: 1.7rem;
+
+  .header-title {
+    font-weight: bold;
+  }
+
+  .header-icon {
+    font-size: 2rem;
+  }
+
+  border-top-left-radius: $corner-radius;
+  border-top-right-radius: $corner-radius;
 }
